@@ -1,2 +1,7 @@
 <h1>Our Website</h1>
-<p>Hello, world</p>
+
+<% @events.each do |event| %>
+    <h2><%= event.title %></h2>
+    <p><%= event.content %></p>
+    <hr />
+<% end %>
