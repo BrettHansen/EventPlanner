@@ -34,8 +34,6 @@ end
 
 gem 'execjs'
 
-# gem 'therubyracer', :platform => :ruby
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
