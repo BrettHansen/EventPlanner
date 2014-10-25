@@ -1,5 +1,22 @@
 == README
 
+CALE, RYAN
+
+In order to get this to work on your system, you may have to install:
+https://github.com/hiranpeiris/therubyracer_for_windows
+http://nodejs.org/
+
+Then, to start the server, navigate to the project folder in cmd, and use the command:
+
+rails s
+
+You can view the website by clicking on the browser icons that appear in upper right corner of JetBrains in the
+appropriate file or by navigating to the correct port in your browser.  See http://youtu.be/UQ8_VOGj5H8?t=9m24s to see
+how to do that.
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
