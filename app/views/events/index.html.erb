@@ -1,4 +1,6 @@
-<h1>Our Website</h1>
+<%= provide(:title, 'EventPlanner') %>
+
+<h1>Featured Events</h1>
 
 <% @events.each do |event| %>
     <h2><%= link_to event.title, event %></h2>

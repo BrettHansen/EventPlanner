@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EventPlanner</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<% flash.each do |key, value| %>
-    <p><%= value %></p>
-<% end %>
+<div id="container">
+  <div id="header">
+    <%= link_to 'EventPlanner', root_path %>
+  </div>
+  <!-- end header -->
 
-<%= yield %>
+  <div id="nav">
+    <ul>
+      <li>
+        <%= link_to 'Home', root_path %>
+      </li>
+    </ul>
+  </div>
+  <!-- end nav -->
+
+  <div id="content">
+
+    <% flash.each do |key, value| %>
+        <p id="message"><%= value %></p>
+    <% end %>
+
+    <%= yield %>
+
+    </div><!-- end content -->
+
+  <div id="footer">
+    &copy; EventPlanner <%= Date.today.year %>
+  </div><!-- end footer -->
+</div><!-- end container -->
 
 </body>
 </html>
