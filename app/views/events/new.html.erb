@@ -1,25 +1,31 @@
 <%= provide(:title, 'EventPlanner: Add Event') %>
 
-<h1>Add a new event</h1>
+<div class="new_event">
 
-<%= form_for @event do |form| %>
-        <% if @event.errors.any? %>
-        <h2>Errors:</h2>
-        <ul>
+  <h1>Add a new event</h1>
+
+  <%= form_for @event do |form| %>
+      <% if @event.errors.any? %>
+          <h2>Errors:</h2>
+          <ul>
             <% @event.errors.full_messages.each do |message| %>
                 <li><%= message %></li>
             <% end %>
-        </ul>
-    <% end %>
-    <p>
-      <%= form.label :title %><br />
-      <%= form.text_field :title %>
-    </p>
-    <p>
-      <%= form.label :content %><br />
-      <%= form.text_area :content %>
-    </p>
-    <p>
-      <%= form.submit "Add a new event" %>
-    </p>
-<% end %>
+          </ul>
+      <% end %>
+      <p>
+        <%= form.label :title %><br/>
+        <%= form.text_field :title %>
+      </p>
+
+      <p>
+        <%= form.label :content %><br/>
+        <%= form.text_area :content %>
+      </p>
+
+      <p>
+        <%= form.submit "Add a new event" %>
+      </p>
+  <% end %>
+
+</div>
