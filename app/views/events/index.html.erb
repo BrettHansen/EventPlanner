@@ -1,11 +1,5 @@
 <%= provide(:title, 'EventPlanner') %>
 
-<% if !logged_in? %>
-    <script type="text/javascript">
-      window.location.href="/register"
-    </script>
-<% end %>
-
 <h1>Featured Events</h1>
 
 <% @events.each do |event| %>

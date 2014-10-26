@@ -1,5 +1,8 @@
 class EventsController < ApplicationController
   def index
+    if !logged_in?
+      redirect_to register_path
+    end
     @events = Event.all
   end
 

@@ -1,6 +1,24 @@
 <% provide(:title, 'EventPlanner: Register') %>
 
 <div>
+  <div class="login_form">
+    <h1>Login</h1>
+
+    <%= form_for(:session, url: sessions_path) do |form| %>
+        <p>
+          <%= form.label :username %><br />
+          <%= form.text_field :username %>
+        </p>
+        <p>
+          <%= form.label :password %><br />
+          <%= form.password_field :password %>
+        </p>
+        <p>
+          <%= form.submit "Login" %>
+        </p>
+
+    <% end %>
+  </div>
   <div class="register_form">
     <h1>Register</h1>
 
@@ -25,24 +43,6 @@
         <p>
           <%= form.submit "Register" %>
         </p>
-    <% end %>
-  </div>
-  <div class="login_form">
-    <h1>Login</h1>
-
-    <%= form_for(:session, url: sessions_path) do |form| %>
-        <p>
-          <%= form.label :username %><br />
-          <%= form.text_field :username %>
-        </p>
-        <p>
-          <%= form.label :password %><br />
-          <%= form.password_field :password %>
-        </p>
-        <p>
-          <%= form.submit "Login" %>
-        </p>
-
     <% end %>
   </div>
 </div>
