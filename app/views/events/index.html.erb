@@ -3,6 +3,7 @@
 <% @events.each do |event| %>
     <h2><%= link_to event.title, event %></h2>
     <p><%= event.content %></p>
+    <p><%= link_to "Edit", edit_event_path(event) %></p>
     <hr />
 <% end %>
 

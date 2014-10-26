@@ -22,11 +22,16 @@ class EventsController < ApplicationController
   end
 
   def edit
-
+    @event = Event.find(params[:id])
   end
 
   def update
-
+    @event = Event.find(params[:id])
+    if @event.update_attributes(params[:event].permit(:title, :content))
+      redirect_to events_path, :notice => "This event was updated"
+    else
+      render "edit"
+    end
   end
 
   def destroy
