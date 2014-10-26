@@ -6,7 +6,7 @@ EventPlanner::Application.routes.draw do
   resources :sessions, only: [:new, :create]
 
   match '/register', to: 'users#new', via: [:get, :post]
-  match '/login', to: 'sessions#new', via: [:get, :post]
+  match '/login', to: 'users#new', via: [:get, :post]
   match '/logout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation: first created -> highest priority.

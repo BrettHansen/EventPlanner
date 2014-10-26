@@ -1,26 +1,48 @@
 <% provide(:title, 'EventPlanner: Register') %>
 
-<h1>Register</h1>
+<div>
+  <div class="register_form">
+    <h1>Register</h1>
 
-<%= form_for(@user) do |form| %>
-    <%= render 'common/form_errors', object: @user %>
+    <%= form_for(@user) do |form| %>
+       <%= render 'common/form_errors', object: @user %>
 
-    <p>
-      <%= form.label :username %><br />
-      <%= form.text_field :username %>
-    </p>
+        <p>
+          <%= form.label :username %><br/>
+          <%= form.text_field :username %>
+        </p>
 
-    <p>
-      <%= form.label :password %><br />
-      <%= form.password_field :password %>
-    </p>
+        <p>
+          <%= form.label :password %><br/>
+          <%= form.password_field :password %>
+        </p>
 
-    <p>
-      <%= form.label :password_confirmation, 'Confirm' %><br />
-      <%= form.password_field :password_confirmation %>
-    </p>
+        <p>
+          <%= form.label :password_confirmation, 'Confirm' %><br/>
+          <%= form.password_field :password_confirmation %>
+        </p>
 
-    <p>
-      <%= form.submit "Register" %>
-    </p>
-<% end %>
+        <p>
+          <%= form.submit "Register" %>
+        </p>
+    <% end %>
+  </div>
+  <div class="login_form">
+    <h1>Login</h1>
+
+    <%= form_for(:session, url: sessions_path) do |form| %>
+        <p>
+          <%= form.label :username %><br />
+          <%= form.text_field :username %>
+        </p>
+        <p>
+          <%= form.label :password %><br />
+          <%= form.password_field :password %>
+        </p>
+        <p>
+          <%= form.submit "Login" %>
+        </p>
+
+    <% end %>
+  </div>
+</div>
