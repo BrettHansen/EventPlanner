@@ -8,11 +8,17 @@ class EventsController < ApplicationController
   end
 
   def new
-
+    @event = Event.new
   end
 
   def create
-    Event.create!(params.permit(:title).permit(:content))
+    @event = Event.new(params[:event].permit(:title, :content))
+
+    if @event.save
+      redirect_to events_path, :notice => "New Event Added"
+    else
+      render "new"
+    end
   end
 
   def edit
@@ -25,5 +31,9 @@ class EventsController < ApplicationController
 
   def destroy
 
+  end
+
+  def event_params
+    params.require(:title).require(:content);
   end
 end
