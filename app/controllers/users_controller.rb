@@ -1,6 +1,17 @@
 class UsersController < ApplicationController
   def create
-    User.create(user_params)
+    @user = User.create(user_params)
+
+    if @user.save
+      flash[:success] = 'Thanks for registering'
+      redirect_to root_url
+    else
+      render 'new'
+    end
+  end
+
+  def new
+    @user = User.new
   end
 
   private
