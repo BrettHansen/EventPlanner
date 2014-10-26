@@ -3,7 +3,10 @@
 <% @events.each do |event| %>
     <h2><%= link_to event.title, event %></h2>
     <p><%= event.content %></p>
-    <p><%= link_to "Edit", edit_event_path(event) %></p>
+    <p>
+      <%= link_to "Edit", edit_event_path(event) %> |
+      <%= link_to "Delete", event, :confirm => "Are you sure you want to delete?", :method => :delete %>
+    </p>
     <hr />
 <% end %>
 

@@ -35,7 +35,8 @@ class EventsController < ApplicationController
   end
 
   def destroy
-
+    Event.find(params[:id]).destroy
+    redirect_to events_path, :notice => "This event was deleted"
   end
 
   def event_params
