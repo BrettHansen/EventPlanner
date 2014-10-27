@@ -1,13 +1,18 @@
 == README
 
-CALE, RYAN
-
 In order to get this to work on your system, you may have to install:
 https://github.com/hiranpeiris/therubyracer_for_windows
 and
 http://nodejs.org/
 
-Then, to start the server, navigate to the project folder in cmd, and use the command:
+Once these are installed, cd into the project folder in cmd, and use the following commands:
+
+bundle install
+
+rake db:migrate
+
+
+Then, to start the server, while in the project folder, run:
 
 rails s
 
