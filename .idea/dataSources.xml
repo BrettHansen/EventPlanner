@@ -7,6 +7,12 @@
       <jdbc-url>jdbc:sqlite:E:\Projects\Programming\CSE 360\EventPlanner\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails EventPlanner: test" uuid="155038ad-f061-4063-9fcb-25fb9fb101d4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\Projects\Programming\CSE 360\EventPlanner\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

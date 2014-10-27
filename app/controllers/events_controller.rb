@@ -15,7 +15,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(params[:event].permit(:title, :content))
+    @event = Event.create(event_params)
 
     if @event.save
       redirect_to events_path, :notice => "New Event Added"
@@ -30,8 +30,8 @@ class EventsController < ApplicationController
 
   def update
     @event = Event.find(params[:id])
-    if @event.update_attributes(params[:event].permit(:title, :content))
-      redirect_to events_path, :notice => "This event was updated"
+    if @event.update_attributes(event_params)
+      redirect_to events_path, :notice => "Event Updated"
     else
       render "edit"
     end
@@ -39,10 +39,10 @@ class EventsController < ApplicationController
 
   def destroy
     Event.find(params[:id]).destroy
-    redirect_to events_path, :notice => "This event was deleted"
+    redirect_to events_path, :notice => "Event Deleted"
   end
 
   def event_params
-    params.require(:title).require(:content);
+    params.require(:event).permit(:title, :content);
   end
 end
