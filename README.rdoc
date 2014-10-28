@@ -21,6 +21,12 @@ appropriate file or by navigating to the correct port in your browser.  See http
 how to do that.
 
 
+To purge the database (should you ever need to), use:
+
+rake db:reset db:migrate
+
+Also, the database is excluded from the VCS so we each have our own independent databases.
+
 
 
 This README would normally document whatever steps are necessary to get the
