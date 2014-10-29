@@ -25,6 +25,9 @@ To purge the database (should you ever need to), use:
 
 rake db:reset db:migrate
 
+You may have to call just *rake db:migrate* first before you can call the previous command.  Also, you must rebuild the
+database each time the files concerning the database are changed.
+
 Also, the database is excluded from the VCS so we each have our own independent databases.
 
 
