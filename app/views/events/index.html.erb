@@ -3,14 +3,12 @@
 <h1>Featured Events</h1>
 
 <% @events.each do |event| %>
-    <h2><%= link_to event.title, event %></h2>
-    <p class="small"><%= event.date.strftime("%A, %B %d at %l:%M %P") %></p>
-    <p><%= event.content %></p>
-    <p>
-      <!-- <%= link_to "Edit", edit_event_path(event) %> -->
-      <!-- <%= link_to "Delete", event, :confirm => "Are you sure you want to delete?", :method => :delete %> -->
-    </p>
-    <hr />
+    <p class="large"><%= link_to event.title, event %></p>
+    <div class="event_preview">
+      <p class="small"><%= event.date.strftime("%A, %B %d at %l:%M %P") %></p>
+      <div class="text_preview"><%= simple_format(event.content) %></div>
+    </div>
+    <hr/>
 <% end %>
 
 <p><%= link_to "Add a new event", new_event_path %></p>

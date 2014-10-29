@@ -3,6 +3,6 @@
 <h1><%= @event.title %></h1>
 <p class="bold"><%= @event.date.strftime("%A, %B %d at %l:%M %P") %><br />
 <%= @event.event_type %> at <%= @event.venue %></p>
-<p><%= @event.content %></p>
+<p><%= simple_format(@event.content) %></p>
 <div class="small_button"><%= button_to "Book" %></div>
 <p class="small"><%= @event.tickets_avail %> tickets available out of <%= @event.tickets_total %> total tickets</p>

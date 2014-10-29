@@ -81,10 +81,6 @@ body {
     font-size: 110%;
   }
 
-  p {
-    margin-bottom: 25px
-  }
-
   a:link, a:visited {
     color: $darkblue;
   }
@@ -166,6 +162,12 @@ body {
     border-right: 1px solid $deepblue;
     overflow: hidden;
 
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px
+    }
+
     ul {
       list-style-type: square;
       margin-left: 20px;
@@ -186,6 +188,17 @@ body {
 
     .small {
       font-size: 90%;
+    }
+
+    .large {
+      font-size: 150%;
+    }
+
+    .event_preview {
+      padding-left: 10px;
+    }
+
+    .text_preview {
       color: $mediumgrey;
     }
 
