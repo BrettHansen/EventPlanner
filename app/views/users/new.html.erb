@@ -5,6 +5,8 @@
     <h1>Login</h1>
 
     <%= form_for(:session, url: sessions_path) do |form| %>
+        <%= render 'common/form_errors', object: @user %>
+
         <p>
           <%= form.label :username %><br />
           <%= form.text_field :username %>
@@ -26,7 +28,7 @@
        <%= render 'common/form_errors', object: @user %>
 
         <p>
-          <%= form.label :username %><br/>
+          <%= form.label :username, 'Username (must be an email address)' %><br/>
           <%= form.text_field :username %>
         </p>
 

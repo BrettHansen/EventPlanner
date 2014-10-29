@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
   def index
+    create_admin
+
     if !logged_in?
       redirect_to register_path
     end
@@ -16,6 +18,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_params)
+    @event.tickets_avail = @event.tickets_total
 
     if @event.save
       redirect_to events_path, :notice => "New Event Added"
@@ -43,6 +46,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:title, :content);
+    params.require(:event).permit(:title, :event_type, :venue, :tickets_avail, :tickets_total, :content, :date, :time);
   end
 end

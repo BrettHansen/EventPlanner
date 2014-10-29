@@ -1,5 +1,7 @@
 <%= provide(:title, @event.title) %>
 
 <h1><%= @event.title %></h1>
+<p><%= @event.event_type %> at <%= @event.venue %></p>
+<p><%= @event.tickets_avail %> tickets available out of <%= @event.tickets_total %> total tickets</p>
 <p><%= @event.content %></p>
 <small><%= @event.created_at %></small>
