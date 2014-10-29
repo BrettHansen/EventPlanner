@@ -1,8 +1,13 @@
 <%= provide(:title, @event.title) %>
 
-<h1><%= @event.title %></h1>
-<p class="bold"><%= @event.date.strftime("%A, %B %d at %l:%M %P") %><br />
-<%= @event.event_type %> at <%= @event.venue %></p>
-<p><%= simple_format(@event.content) %></p>
-<div class="small_button"><%= button_to "Book" %></div>
-<p class="small"><%= @event.tickets_avail %> tickets available out of <%= @event.tickets_total %> total tickets</p>
+<div class="event_detail">
+  <p class="title"><%= @event.title %></p>
+
+  <p class="date"><%= @event.date.strftime("%A, %B %d at %l:%M %P") %></p>
+
+  <p class="type_venue"><%= @event.event_type %> at <%= @event.venue %></p>
+
+  <div class="text"><%= simple_format(@event.content) %></div>
+  <div class="book"><%= button_to "Book" %></div>
+  <p class="tickets"><%= @event.tickets_avail %> out of <%= @event.tickets_total %> tickets available</p>
+</div>

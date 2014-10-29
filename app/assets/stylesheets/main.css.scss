@@ -161,6 +161,8 @@ body {
     border-left: 1px solid $deepblue;
     border-right: 1px solid $deepblue;
     overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
 
     p {
@@ -186,20 +188,57 @@ body {
       height: 200px;
     }
 
-    .small {
-      font-size: 90%;
-    }
-
-    .large {
-      font-size: 150%;
-    }
-
     .event_preview {
-      padding-left: 10px;
+      padding-left: 0px;
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .title {
+        font-size: 150%;
+      }
+
+      .date {
+        padding-left: 10px;
+        font-size: 90%;
+      }
+
+      .text {
+        padding-left: 10px;
+        font-size: 100%;
+      }
+
     }
 
-    .text_preview {
-      color: $mediumgrey;
+    .event_detail {
+
+      .title {
+        font-size: 200%;
+      }
+
+      .date, .type_venue {
+        font-size: 90%;
+        font-style: italic;
+      }
+
+      .text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .book {
+        width: 200px;
+      }
+
+      .tickets {
+        font-size: 80%;
+        color: $mediumgrey;
+      }
     }
 
     .bold {
@@ -223,12 +262,22 @@ body {
       display: inline-block;
       width: 450px;
       vertical-align: top;
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
     .login_form {
       display: inline-block;
       width: 450px;
       vertical-align: top;
       margin-left: 245px;
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
 
 
