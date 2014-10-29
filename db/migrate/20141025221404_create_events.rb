@@ -7,7 +7,7 @@ class CreateEvents < ActiveRecord::Migration
       t.integer :tickets_avail
       t.integer :tickets_total
       t.text :content
-      t.date :date
+      t.datetime :date
 
       t.timestamps
     end

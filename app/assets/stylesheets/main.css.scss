@@ -53,7 +53,8 @@ table {
 $darkblue: #282B2E;
 $deepblue: #6E96C0;
 $lightblue: #7AA6D4;
-$lightgray: #ccc;
+$mediumgrey: #555;
+$lightgrey: #ccc;
 $white: #fff;
 
 /* -------- Main Styles --------- */
@@ -183,6 +184,19 @@ body {
       height: 200px;
     }
 
+    .small {
+      font-size: 90%;
+      color: $mediumgrey;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .small_button {
+      width: 200px;
+    }
+
     .new_event {
       display: inline-block;
       width: 500px;
@@ -203,6 +217,8 @@ body {
       vertical-align: top;
       margin-left: 245px;
     }
+
+
   }
 
   /* Flash Message */
@@ -239,13 +255,13 @@ body {
 
   #ask {
     margin-bottom: 30px;
-    border-bottom: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgrey;
   }
 
   /* Answers div */
 
   #answers {
-    border-top: 1px solid $lightgray;
+    border-top: 1px solid $lightgrey;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -253,7 +269,7 @@ body {
   /* post-answer div */
 
   #post-answer {
-    border-top: 1px solid $lightgray;
+    border-top: 1px solid $lightgrey;
     padding-top: 20px;
   }
 

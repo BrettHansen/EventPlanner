@@ -20,8 +20,7 @@ ActiveRecord::Schema.define(version: 20141026020509) do
     t.integer  "tickets_avail"
     t.integer  "tickets_total"
     t.text     "content"
-    t.date     "date"
-    t.datetime "time"
+    t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
