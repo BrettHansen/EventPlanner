@@ -1,0 +1,6 @@
+<div class="event_preview">
+  <p class="title"><%= link_to preview_events.title, preview_events %></p>
+  <p class="date"><%= preview_events.date.strftime('%A, %B %d at %l:%M %P') %></p>
+  <div class="text"><%= simple_format(preview_events.content) %></div>
+  <hr/>
+</div>

@@ -1,14 +1,6 @@
 <%= provide(:title, 'EventPlanner') %>
 
 <h1>Featured Events</h1>
-
-<% @events.each do |event| %>
-    <div class="event_preview">
-      <p class="title"><%= link_to event.title, event %></p>
-      <p class="date"><%= event.date.strftime("%A, %B %d at %l:%M %P") %></p>
-      <div class="text"><%= simple_format(event.content) %></div>
-      <hr/>
-    </div>
-<% end %>
+<%= render partial: 'common/preview_events', collection: @events %>
 
 <p><%= link_to "Add a new event", new_event_path %></p>

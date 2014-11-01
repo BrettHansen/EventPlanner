@@ -40,6 +40,10 @@ class EventsController < ApplicationController
     end
   end
 
+  def book
+
+  end
+
   def destroy
     Event.find(params[:id]).destroy
     redirect_to events_path, :notice => "Event Deleted"

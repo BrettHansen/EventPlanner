@@ -3,22 +3,38 @@
 <h1>Edit Event</h1>
 
 <%= form_for @event do |form| %>
-    <% if @event.errors.any? %>
-        <h2>Errors:</h2>
-        <ul>
-          <% @event.errors.full_messages.each do |message| %>
-              <li><%= message %></li>
-          <% end %>
-        </ul>
-    <% end %>
+    <%= render 'common/form_errors', object: @event %>
+
     <p>
-      <%= form.label :title %><br />
+      <%= form.label :title %><br/>
       <%= form.text_field :title %>
     </p>
+
     <p>
-      <%= form.label :content %><br />
+      <%= form.label :date %><br/>
+      <%= form.datetime_select :date, order: [:month, :day, :year, :hour, :minute] %>
+    </p>
+
+    <p>
+      <%= form.label :event_type %><br/>
+      <%= form.text_field :event_type %>
+    </p>
+
+    <p>
+      <%= form.label :venue %><br/>
+      <%= form.text_field :venue %>
+    </p>
+
+    <p>
+      <%= form.label :tickets_total %><br/>
+      <%= form.text_field :tickets_total %>
+    </p>
+
+    <p>
+      <%= form.label :content %><br/>
       <%= form.text_area :content %>
     </p>
+
     <p>
       <%= form.submit "Update Event" %>
     </p>

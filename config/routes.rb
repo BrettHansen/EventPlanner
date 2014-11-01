@@ -2,9 +2,12 @@ EventPlanner::Application.routes.draw do
 
   root to: 'events#index'
   resources :events
-  resources :users, only: [:new, :create]
+  resources :users do
+    resources :tickets, only: [:new, :create]
+  end
   resources :sessions, only: [:new, :create]
 
+  match '/myevents', to: 'tickets#show', via: :get
   match '/register', to: 'users#new', via: [:get, :post]
   match '/login', to: 'users#new', via: [:get, :post]
   match '/logout', to: 'sessions#destroy', via: :delete

@@ -8,6 +8,15 @@
   <p class="type_venue"><%= @event.event_type %> at <%= @event.venue %></p>
 
   <div class="text"><%= simple_format(@event.content) %></div>
-  <div class="book"><%= button_to "Book" %></div>
+  <%= form_for([current_user, current_user.tickets.build]) do |form| %>
+      <%= form.hidden_field :event_id, :value => @event.id %>
+      <p>
+        <%= form.label :quantity %>
+        <%= form.text_field :quantity %>
+      </p>
+      <p>
+        <%= form.submit 'Book' %>
+      </p>
+  <% end %>
   <p class="tickets"><%= @event.tickets_avail %> out of <%= @event.tickets_total %> tickets available</p>
 </div>
