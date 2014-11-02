@@ -51,18 +51,22 @@ table {
 /* -------- Sass Variables -------- */
 
 $darkblue: #282B2E;
-$deepblue: #6E96C0;
-$lightblue: #7AA6D4;
+$deepblue: #4A5891;
+$lightblue: #5A6BB0;
 $mediumgrey: #555;
+$darkgrey: #333;
 $lightgrey: #ccc;
 $white: #fff;
+$black: #000;
 
 /* -------- Main Styles --------- */
 
 /* General Tags */
 
 body {
+  background-image: -webkit-linear-gradient(top, #FAFAFA 0%, #ADADAD 100%);
   text-align: center;
+  min-height: 1000px;
 
   h1, h2, h3 {
     margin-bottom: 12px;
@@ -157,12 +161,12 @@ body {
   #content {
     clear: both;
     padding: 18px;
-    background-color: $white;
+    background-color: $lightgrey;
+    color: $black;
     border-left: 1px solid $deepblue;
     border-right: 1px solid $deepblue;
     overflow: hidden;
     margin-top: 10px;
-    margin-bottom: 20px;
 
 
     p {
@@ -192,6 +196,7 @@ body {
       padding-left: 0px;
 
       a {
+        color: $black;
         text-decoration: none;
       }
 
@@ -209,7 +214,7 @@ body {
       }
 
       .text {
-        color: $mediumgrey;
+        color: $black;
         padding-left: 10px;
         font-size: 90%;
       }
@@ -238,7 +243,12 @@ body {
 
       .tickets {
         font-size: 80%;
-        color: $mediumgrey;
+        color: $black;
+      }
+
+      .book_form {
+        width: 10%;
+
       }
     }
 

@@ -9,22 +9,25 @@
 
   <div class="text"><%= simple_format(@event.content) %></div>
 
-  <% if @my_events.include?(@event) %>
-      <p>
-        You already have tickets for this event!
-      </p>
-  <% else %>
-      <%= form_for([current_user, current_user.tickets.build]) do |form| %>
-          <%= form.hidden_field :event_id, :value => @event.id %>
-          <p>
-            <%= form.label :quantity %>
-            <%= form.text_field :quantity, :value => '1' %>
-          </p>
-
-          <p>
-            <%= form.submit 'Book' %>
-          </p>
-      <% end %>
-  <% end %>
+  <div class="book_form">
+    <% if @my_events.include?(@event) %>
+        <p>
+          You already have tickets for this event!
+        </p>
+    <% else %>
+        <%= form_for([current_user, current_user.tickets.build]) do |form| %>
+            <%= form.hidden_field :event_id, :value => @event.id %>
+            <span>
+              <%= form.label :quantity %>
+            </span>
+            <span>
+              <%= form.text_field :quantity, :value => '1' %>
+            </span>
+            <span>
+              <%= form.submit 'Book', {:class => 'button'} %>
+            </span>
+        <% end %>
+    <% end %>
+  </div>
   <p class="tickets"><%= @event.tickets_avail %> out of <%= @event.tickets_total %> tickets available</p>
 </div>
