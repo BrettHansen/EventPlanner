@@ -5,7 +5,7 @@ class EventsController < ApplicationController
     if !logged_in?
       redirect_to register_path
     end
-    @events = Event.all
+    @events = available_events
   end
 
   def show
@@ -38,10 +38,6 @@ class EventsController < ApplicationController
     else
       render "edit"
     end
-  end
-
-  def book
-
   end
 
   def destroy

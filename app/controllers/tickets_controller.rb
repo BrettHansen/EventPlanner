@@ -1,15 +1,21 @@
 class TicketsController < ApplicationController
   def create
     @user = current_user
-    @ticket = @user.tickets.create(ticket_params)
-    redirect_to myevents_path
+    @event = Event.find(ticket_params[:event_id])
+    if ticket_params[:quantity].to_i <= @event.tickets_avail.to_i
+      @ticket = @user.tickets.create(ticket_params)
+      @event.tickets_avail= @event.tickets_avail.to_i - ticket_params[:quantity].to_i
+      @event.save
+      redirect_to myevents_path
+    else
+      flash[:error] = 'Not enough tickets available'
+      redirect_to event_path(ticket_params[:event_id])
+    end
   end
 
   def show
-    @user = current_user
-    @tickets = @user.tickets
     @events = []
-    @tickets.each do |ticket|
+    current_user.tickets.each do |ticket|
       @events << Event.find(ticket.event_id)
     end
     @events.sort_by! {|a| a.date}

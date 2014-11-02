@@ -12,7 +12,7 @@
       <%= form.hidden_field :event_id, :value => @event.id %>
       <p>
         <%= form.label :quantity %>
-        <%= form.text_field :quantity %>
+        <%= form.text_field :quantity, :value => '1' %>
       </p>
       <p>
         <%= form.submit 'Book' %>
