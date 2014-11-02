@@ -1,6 +1,9 @@
 <div class="event_preview">
-  <p class="title"><%= link_to preview_events.title, preview_events %></p>
-  <p class="date"><%= preview_events.date.strftime('%A, %B %d at %l:%M %P') %></p>
-  <div class="text"><%= simple_format(preview_events.content) %></div>
+  <% @event = Event.find(preview_tickets.event_id) %>
+  <p class="title"><%= link_to @event.title, @event %></p>
+  <p class="date"><%= @event.date.strftime('%A, %B %d at %l:%M %P') %></p>
+  <div class="text"><%= simple_format(@event.content) %></div>
+  <% @keyword = preview_tickets.quantity.to_i == 1 ? 'ticket' : 'tickets' %>
+  <div class="user_tickets">You have <%= preview_tickets.quantity %> <%= @keyword %> for this event.</div>
   <hr/>
 </div>

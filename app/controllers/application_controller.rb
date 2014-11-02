@@ -12,8 +12,8 @@ class ApplicationController < ActionController::Base
     end
 
     def current_user
-      if session[:user_id]
-        User.find(session[:user_id])
+      if !session[:user_id].nil?
+        current_user ||= User.find(session[:user_id])
       end
     end
 
@@ -30,10 +30,14 @@ class ApplicationController < ActionController::Base
 
   def available_events
     @events_all = Event.all
-    @events_exclude = []
+    @events_all - my_events
+  end
+
+  def my_events
+    @events = []
     current_user.tickets.each do |ticket|
-      @events_exclude << Event.find(ticket.event_id)
+      @events << Event.find(ticket.event_id)
     end
-    @events_all - @events_exclude
+    @events.sort_by! {|a| a.date}
   end
 end

@@ -1,7 +1,5 @@
 class EventsController < ApplicationController
   def index
-    create_admin
-
     if !logged_in?
       redirect_to register_path
     end
@@ -10,6 +8,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @my_events = my_events
   end
 
   def new
