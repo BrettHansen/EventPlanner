@@ -1,23 +1,20 @@
-== README
+## Event Planner
 
-In order to get this to work on your system, you may have to install:
-https://github.com/hiranpeiris/therubyracer_for_windows
-and
-http://nodejs.org/
-
+In order to get this to work on your system, you will have to install:
+    * [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
+    * [NodeJS](http://nodejs.org/)
 Once these are installed, use bundle install to install the appropriate dependencies.
 
 Next, to create and seed the database call:
 
-rake db:migrate db:seed             if this database does not already exist, or
-
-rake db:reset db:migrate db:seed    to overwrite the existing database.
-
+ if the database does not already exist:
+        rake db:migrate db:seed
+ or, to overwrite the existing database:
+        rake db:reset db:migrate db:seed
 
 Then, to start the server, while in the project folder, run:
 
-rails s
+        rails s
 
-Go to localhost:3000 in a browser to see the site!
-
-Also, the database is excluded from the VCS so we each have our own independent databases.
+Go to localhost:3000 in a browser to see the site!  Also, the database is excluded from the VCS so we each have our own
+independent databases.
