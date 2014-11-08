@@ -1,16 +1,13 @@
 EventPlanner::Application.routes.draw do
 
+  devise_for :users
   root to: 'events#index'
   resources :events
   resources :users do
     resources :tickets, only: [:new, :create]
   end
-  resources :sessions, only: [:new, :create]
 
   match '/my_events', to: 'tickets#show', via: :get
-  match '/register', to: 'users#new', via: [:get, :post]
-  match '/login', to: 'users#new', via: [:get, :post]
-  match '/logout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

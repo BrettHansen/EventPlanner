@@ -1,8 +1,8 @@
 class EventsController < ApplicationController
+
+  before_action :authenticate_user!
+
   def index
-    if !logged_in?
-      redirect_to register_path
-    end
     @events = available_events
   end
 
@@ -18,6 +18,7 @@ class EventsController < ApplicationController
   def create
     @event = Event.create(event_params)
     @event.tickets_avail = @event.tickets_total
+    flash[:notice] = @event.inspect
 
     if @event.save
       redirect_to events_path, :notice => "New Event Added"

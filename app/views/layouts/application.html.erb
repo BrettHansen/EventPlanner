@@ -17,9 +17,9 @@
   <div id="nav">
     <ul>
 
-      <% if logged_in? %>
+      <% if user_signed_in? %>
           <li>
-            <%= link_to "Logout (#{current_user.username})", logout_path, method: 'delete' %>
+            <%= link_to "Logout", destroy_user_session_path, method: 'delete' %>
           </li>
           <li>
             <%= link_to 'My Events', my_events_path %>
@@ -29,7 +29,10 @@
           </li>
       <% else %>
           <li>
-            <%= link_to 'Login/Register', register_path %>
+            <%= link_to 'Register', new_user_registration_path %>
+          </li>
+          <li>
+            <%= link_to 'Login', new_user_session_path %>
           </li>
       <% end %>
     </ul>
@@ -38,8 +41,11 @@
 
   <div id="content">
 
-    <% flash.each do |key, value| %>
-        <p id="message"><%= value %></p>
+    <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
     <%= yield %>
