@@ -1,10 +1,7 @@
 ## Event Planner
 
-In order to get this to work on your system, you will have to install:
+In order to get this to work on your system, you will have to install [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows) and [NodeJS](http://nodejs.org/)
 
-    * [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
-    * [NodeJS](http://nodejs.org/)
-    
 Once these are installed, use bundle install to install the appropriate dependencies.
 
 Next, to create and seed the database call:
