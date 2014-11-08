@@ -5,56 +5,19 @@ https://github.com/hiranpeiris/therubyracer_for_windows
 and
 http://nodejs.org/
 
-Once these are installed, cd into the project folder in cmd, and use the following commands:
+Once these are installed, use bundle install to install the appropriate dependencies.
 
-bundle install
+Next, to create and seed the database call:
 
-rake db:migrate
+rake db:migrate db:seed             if this database does not already exist, or
+
+rake db:reset db:migrate db:seed    to overwrite the existing database.
 
 
 Then, to start the server, while in the project folder, run:
 
 rails s
 
-You can view the website by clicking on the browser icons that appear in upper right corner of JetBrains in the
-appropriate file or by navigating to the correct port in your browser.  See http://youtu.be/UQ8_VOGj5H8?t=9m24s to see
-how to do that.
-
-
-To purge the database (should you ever need to), use:
-
-rake db:reset db:migrate
-
-You may have to call just *rake db:migrate* first before you can call the previous command.  Also, you must rebuild the
-database each time the files concerning the database are changed.
+Go to localhost:3000 in a browser to see the site!
 
 Also, the database is excluded from the VCS so we each have our own independent databases.
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
