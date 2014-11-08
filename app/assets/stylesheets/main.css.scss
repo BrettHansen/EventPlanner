@@ -15,7 +15,8 @@ time, mark, audio, video {
   padding: 10;
   border: 10;
   font-size: 100%;
-  font: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
   vertical-align: baseline;
 }
 
@@ -56,6 +57,7 @@ $lightblue: #5A6BB0;
 $mediumgrey: #555;
 $darkgrey: #333;
 $lightgrey: #ccc;
+$content_text: $darkgrey;
 $white: #fff;
 $black: #000;
 
@@ -64,7 +66,7 @@ $black: #000;
 /* General Tags */
 
 body {
-  background-image: -webkit-linear-gradient(top, #FAFAFA 0%, #ADADAD 100%);
+  background-image: -webkit-linear-gradient(top, #000 0%, #444 100%);
   text-align: center;
   min-height: 1000px;
 
@@ -108,6 +110,7 @@ body {
     color: $white;
     height: 30px;
     padding: 18px;
+    overflow: hidden;
     border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
@@ -117,42 +120,58 @@ body {
       text-decoration: none;
       font-size: 220%;
     }
-  }
 
-  /* Searchbar */
-
-  #searchbar {
-    float: right;
+    img {
+      float: right;
+    }
   }
 
   /* Nav */
 
   #nav {
+    clear: both;
+    font-size: 150%;
     position: relative;
     overflow: hidden;
-    float: left;
     width: 1200px;
+    height: 36px;
     background-color: $lightblue;
+    padding: 0;
 
     ul {
-      margin: 0;
+      margin: 5px;
       padding: 0;
+    }
 
-      li {
-        display: inline;
+    a.hover {
+      color: $deepblue;
+      text-decoration: underline;
+    }
 
-        a {
-          float: right;
-          display: block;
-          padding: 12px 12px;
-          color: $white;
-          border-left: 1px solid $white;
-        }
+    li.left {
+      display: inline-block;
+      vertical-align: middle;
+      float: left;
+    }
 
-        a:hover {
-          color: $deepblue;
-        }
-      }
+    li.right {
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+    }
+
+    li.left a {
+      padding: 12px 12px;
+      color: $white;
+      text-decoration: none;
+      border-right: 1px solid $white;
+    }
+
+    li.right a {
+      padding: 12px 12px;
+      color: $white;
+      text-decoration: none;
+      border-left: 1px solid $white;
     }
   }
 
@@ -160,13 +179,14 @@ body {
 
   #content {
     clear: both;
-    padding: 18px;
     background-color: $lightgrey;
-    color: $black;
+    color: $content_text;
     border-left: 1px solid $deepblue;
     border-right: 1px solid $deepblue;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 
     p {
@@ -196,7 +216,7 @@ body {
       padding-left: 0px;
 
       a {
-        color: $black;
+        color: $content_text;
         text-decoration: none;
       }
 
@@ -214,7 +234,7 @@ body {
       }
 
       .text {
-        color: $black;
+        color: $content_text;
         padding-left: 10px;
         font-size: 90%;
       }

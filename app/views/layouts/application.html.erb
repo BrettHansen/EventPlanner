@@ -11,6 +11,7 @@
 <div id="container">
   <div id="header">
     <%= link_to 'EventPlanner', root_path %>
+    <%= image_tag(current_user.avatar.url) %>
   </div>
   <!-- end header -->
 
@@ -18,23 +19,23 @@
     <ul>
 
       <% if user_signed_in? %>
-          <li>
-            <%= link_to "Logout", destroy_user_session_path, method: 'delete' %>
-          </li>
-          <li>
-            <%= image_tag(current_user.avatar.url) %>
-          </li>
-          <li>
+          <li class="left">
             <%= link_to 'My Events', my_events_path %>
           </li>
-          <li>
+          <li class="left">
             <%= link_to 'Featured Events', events_path %>
           </li>
+          <li class="right">
+            <%= link_to "Logout", destroy_user_session_path, method: 'delete' %>
+          </li>
+          <li class="right">
+            <%= link_to 'Settings', edit_user_registration_path %>
+          </li>
       <% else %>
-          <li>
+          <li class="right">
             <%= link_to 'Register', new_user_registration_path %>
           </li>
-          <li>
+          <li class="right">
             <%= link_to 'Login', new_user_session_path %>
           </li>
       <% end %>

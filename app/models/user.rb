@@ -10,6 +10,4 @@ class User < ActiveRecord::Base
                       with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,
                       :message => "must be an email address",
                       on: :create
-  validates :password, length: { minimum: 5}
-  validates :password_confirmation, length: { minimum: 5}
 end
