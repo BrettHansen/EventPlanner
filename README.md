@@ -7,10 +7,10 @@ Once these are installed, use bundle install to install the appropriate dependen
 
 Next, to create and seed the database call:
 
- if the database does not already exist:
         rake db:migrate db:seed
- or, to overwrite the existing database:
+if the database does not already exist, or
         rake db:reset db:migrate db:seed
+to overwrite the existing database.
 
 Then, to start the server, while in the project folder, run:
 
