@@ -22,6 +22,9 @@
             <%= link_to "Logout", destroy_user_session_path, method: 'delete' %>
           </li>
           <li>
+            <%= image_tag(current_user.avatar.url) %>
+          </li>
+          <li>
             <%= link_to 'My Events', my_events_path %>
           </li>
           <li>
