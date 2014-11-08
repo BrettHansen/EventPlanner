@@ -12,6 +12,7 @@ Event.create(title: "Beethoven and Brahms",
 Event.create(title: "Dvorak's Symphony No. 9",
              event_type: "Concert",
              venue: "Symphony Hall",
+             tickets_avail: 1000,
              tickets_total: 1000,
              content: "Classics Series:\r\n\r\nJoAnn Falletta, conductor\r\nChloe Hanslip, violin",
              date: "2014-11-29 19:30:00")

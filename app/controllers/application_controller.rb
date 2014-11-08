@@ -6,8 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def available_events
-    @events_all = Event.all
-    @events_all - my_events
+    Event.all - my_events - booked_events
   end
 
   def my_events
@@ -16,5 +15,16 @@ class ApplicationController < ActionController::Base
       @events << Event.find(ticket.event_id)
     end
     @events.sort_by! {|a| a.date}
+  end
+
+  def booked_events
+    @events_all = Event.all
+    @events_booked = []
+    @events_all.each do |event|
+      if event.tickets_avail == 0
+        @events_booked << event
+      end
+    end
+    @events_booked
   end
 end
