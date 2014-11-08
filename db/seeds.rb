@@ -2,6 +2,13 @@
 User.create(email: "admin@admin.com", password: "password", password_confirmation: "password")
 
 # Default Events
+Event.create(title: "Past Event",
+             event_type: "Event",
+             venue: "Venue",
+             tickets_avail: 1000,
+             tickets_total: 1000,
+             content: "This event should not show up in featured events.",
+             date: "1994-03-01 07:58:00")
 Event.create(title: "Beethoven and Brahms",
              event_type: "Concert",
              venue: "Symphony Hall",

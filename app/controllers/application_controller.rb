@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def available_events
-    Event.all - my_events - booked_events
+    Event.all - my_events - booked_events - past_events
   end
 
   def my_events
@@ -26,5 +26,16 @@ class ApplicationController < ActionController::Base
       end
     end
     @events_booked
+  end
+
+  def past_events
+    @events_all = Event.all
+    @past_events = []
+    @events_all.each do |event|
+      if event.date.to_s < Date.today.to_s
+        @past_events << event
+      end
+    end
+    @past_events
   end
 end

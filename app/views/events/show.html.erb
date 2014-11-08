@@ -3,7 +3,11 @@
 <div class="event_detail">
   <p class="title"><%= @event.title %></p>
 
-  <p class="date"><%= @event.date.strftime("%A, %B %d at %l:%M %P") %></p>
+  <% if @event.date.year == Date.today.year %>
+    <p class="date"><%= @event.date.strftime("%A, %B %-d at %l:%M %P") %></p>
+  <% else %>
+    <p class="date"><%= @event.date.strftime("%A, %B %-d, %Y at %l:%M %P") %></p>
+  <% end %>
 
   <p class="type_venue"><%= @event.event_type %> at <%= @event.venue %></p>
 
