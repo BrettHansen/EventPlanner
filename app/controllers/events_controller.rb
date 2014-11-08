@@ -18,7 +18,6 @@ class EventsController < ApplicationController
   def create
     @event = Event.create(event_params)
     @event.tickets_avail = @event.tickets_total
-    flash[:notice] = @event.inspect
 
     if @event.save
       redirect_to events_path, :notice => "New Event Added"

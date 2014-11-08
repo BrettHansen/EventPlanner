@@ -11,7 +11,9 @@
 <div id="container">
   <div id="header">
     <%= link_to 'EventPlanner', root_path %>
-    <%= image_tag(current_user.avatar.url) %>
+    <% if user_signed_in? && !current_user.avatar.nil? %>
+        <%= image_tag(current_user.avatar.url) %>
+    <% end %>
   </div>
   <!-- end header -->
 
@@ -54,12 +56,15 @@
 
     <%= yield %>
 
-    </div><!-- end content -->
+  </div>
+  <!-- end content -->
 
   <div id="footer">
     &copy; EventPlanner <%= Date.today.year %>
-  </div><!-- end footer -->
-</div><!-- end container -->
+  </div>
+  <!-- end footer -->
+</div>
+<!-- end container -->
 
 </body>
 </html>
