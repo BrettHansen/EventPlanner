@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def available_events
-    Event.all - my_events - booked_events - past_events
+    @events = Event.all - my_events - booked_events - past_events
+    @events.sort_by! {|a| a.date}
   end
 
   def my_events
