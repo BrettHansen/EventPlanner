@@ -7,9 +7,7 @@ Requirements
 
 * [Ruby on Rails](http://rubyonrails.org/download)
 
-    *or*
-
-* Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
+    *Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
 
     *Ruby 1.9.3*
 
@@ -40,11 +38,9 @@ Install
 
 * Use bundle install to install the appropriate dependencies. `bundle install`
 
-* Create and seed the database with `rake db:migrate db:seed` if the database does not already exist,
+* If a database does not already exist, create and seed a new database with `rake db:migrate db:seed`
 
-*or*
-
-`rake db:reset db:migrate db:seed` to overwrite an existing database.
+* If a database does already exist use `rake db:reset db:migrate db:seed` to overwrite
 
 * Start the server with `rails s`
 
