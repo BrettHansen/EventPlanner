@@ -1,4 +1,4 @@
-Event Planner
+![Event Planner](https://github.com/BrettHansen/EventPlanner/tree/master/app/assets/images/logo.jpg)
 =============
 
 
