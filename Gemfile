@@ -38,6 +38,8 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
 
+gem 'simplecov'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -1,9 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  content: MyText
+  title: Past Event
+  event_type: Event
+  venue: Venue
+  tickets_avail: 1000
+  tickets_total: 1000
+  content: This is a past event.
+  date: 1994-03-01 07:58:00
 
 two:
-  title: MyString
-  content: MyText
+  title: Beethoven and Brahms
+  event_type: Concert
+  venue: Symphony Hall
+  tickets_avail: 1000
+  tickets_total: 1000
+  content: This is a future event.
+  date: 2015-12-21 19:30:00

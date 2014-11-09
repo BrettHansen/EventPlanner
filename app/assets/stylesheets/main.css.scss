@@ -212,6 +212,31 @@ body {
       height: 200px;
     }
 
+    .sign_in {
+      display: list-item;
+      width: 50%;
+      padding-bottom: 20px;
+
+      input {
+        margin: 2px;
+      }
+
+      input[type="checkbox"] {
+        margin-left: 40px;
+        width: 10%;
+      }
+    }
+
+    .register {
+      display: list-item;
+      width: 50%;
+      padding-bottom: 20px;
+
+      input {
+        margin: 2px;
+      }
+    }
+
     .event_preview {
       padding-left: 0px;
 
