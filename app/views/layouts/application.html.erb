@@ -13,7 +13,8 @@
     <%= link_to 'EventPlanner', root_path %>
     <% if user_signed_in? && !current_user.avatar.nil? %>
         <%= image_tag(current_user.avatar.url) %>
-    <% end %>
+        <span class=""><%= current_user.email %></span>
+  <% end %>
   </div>
   <!-- end header -->
 
