@@ -1,26 +1,30 @@
-## Event Planner
+Event Planner
+=============
 
-# Install
 
-* In order to install this on your system, you will have to install the following:
+Requirements
+------------
 
-** [Ruby on Rails](http://rubyonrails.org/download)
+* [Ruby on Rails](http://rubyonrails.org/download)
 *or*
-** Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
-*** *Ruby 1.9.3*
-*** *Rails 3.2*
-*** *Bundler*
-*** *Git*
-*** *Sqlite*
-*** *TinyTDS*
-*** *SQL Server Support*
-*** *DevKit*
+* Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
+*Ruby 1.9.3*
+*Rails 3.2*
+*Bundler*
+*Git*
+*Sqlite*
+*TinyTDS*
+*SQL Server Support*
+*DevKit*
 
-** [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
-** [NodeJS](http://nodejs.org/)
-** [ImageMagick](http://www.imagemagick.org/)
+* [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
+* [NodeJS](http://nodejs.org/)
+* [ImageMagick](http://www.imagemagick.org/)
 
-* Open a command prompt or terminal, and navigate to to project root folder
+Install
+-------
+
+* Be sure all of the above software is installed, and then inside of a command prompt or terminal, navigate to project root folder
 
 * Use bundle install to install the appropriate dependencies. `bundle install`
 
