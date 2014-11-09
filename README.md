@@ -7,23 +7,15 @@ Requirements
 
 * [Ruby on Rails](http://rubyonrails.org/download)
 
-    *Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
-
-    *Ruby 1.9.3*
-
-    *Rails 3.2*
-
-    *Bundler*
-
-    *Git*
-
-    *Sqlite*
-
-    *TinyTDS*
-
-    *SQL Server Support*
-
-    *DevKit*
+    *Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will include the following:*
+      * *Ruby 1.9.3*
+      * *Rails 3.2*
+      * *Bundler*
+      * *Git*
+      * *Sqlite*
+      * *TinyTDS*
+      * *SQL Server Support*
+      * *DevKit*
 
 * [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
 
