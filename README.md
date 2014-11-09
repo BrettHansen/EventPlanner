@@ -28,13 +28,25 @@ Install
 
 * Be sure all of the above software is installed, and then inside of a command prompt or terminal, navigate to project root folder
 
-* Use bundle install to install the appropriate dependencies. `bundle install`
+* Use bundle install to install the appropriate dependencies:
+    ```
+    bundle install
+    ```
 
-* If a database does not already exist, create and seed a new database with `rake db:migrate db:seed`
+* If a database does not already exist, create and seed a new database with:
+    ```
+    rake db:migrate db:seed
+    ```
 
-* If a database does already exist use `rake db:reset db:migrate db:seed` to overwrite
+* If a database does already exist use the following to overwrite:
+    ```
+    rake db:reset db:migrate db:seed
+    ```
 
-* Start the server with `rails s`
+* Start the server
+    ```
+    rails s
+    ```
 
 * Go to "http://localhost:3000" in your web browser
 
