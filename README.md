@@ -1,20 +1,35 @@
 ## Event Planner
 
-In order to get this to work on your system, you will have to install [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows), [NodeJS](http://nodejs.org/), and ImageMagick.
+# Install
 
-Once these are installed, use bundle install to install the appropriate dependencies.
+* In order to install this on your system, you will have to install the following:
 
-Next, to create and seed the database call:
+** [Ruby on Rails](http://rubyonrails.org/download)
+*or*
+** Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will also include the following:*
+*** *Ruby 1.9.3*
+*** *Rails 3.2*
+*** *Bundler*
+*** *Git*
+*** *Sqlite*
+*** *TinyTDS*
+*** *SQL Server Support*
+*** *DevKit*
 
-        rake db:migrate db:seed
-if the database does not already exist, or
+** [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
+** [NodeJS](http://nodejs.org/)
+** [ImageMagick](http://www.imagemagick.org/)
 
-        rake db:reset db:migrate db:seed
-to overwrite the existing database.
+* Open a command prompt or terminal, and navigate to to project root folder
 
-Then, to start the server, while in the project folder, run:
+* Use bundle install to install the appropriate dependencies. `bundle install`
 
-        rails s
+* Create and seed the database with `rake db:migrate db:seed` if the database does not already exist,
+*or*
+`rake db:reset db:migrate db:seed` to overwrite an existing database.
 
-Go to localhost:3000 in a browser to see the site!  Also, the database is excluded from the VCS so we each have our own
-independent databases.
+* Start the server with `rails s`
+
+* Go to "http://localhost:3000" in your web browser
+
+* Done!
