@@ -1,20 +1,53 @@
-## Event Planner
+Event Planner
+=============
 
-In order to get this to work on your system, you will have to install [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows), [NodeJS](http://nodejs.org/), and ImageMagick.
 
-Once these are installed, use bundle install to install the appropriate dependencies.
+Requirements
+------------
 
-Next, to create and seed the database call:
+* [Ruby on Rails](http://rubyonrails.org/download)
 
-        rake db:migrate db:seed
-if the database does not already exist, or
+    *Another option is [Rails Installer](http://railsinstaller.org/en). This works very well for Windows and will include the following:*
+      * *Ruby 1.9.3*
+      * *Rails 3.2*
+      * *Bundler*
+      * *Git*
+      * *Sqlite*
+      * *TinyTDS*
+      * *SQL Server Support*
+      * *DevKit*
 
-        rake db:reset db:migrate db:seed
-to overwrite the existing database.
+* [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows)
 
-Then, to start the server, while in the project folder, run:
+* [NodeJS](http://nodejs.org/)
 
-        rails s
+* [ImageMagick](http://www.imagemagick.org/)
 
-Go to localhost:3000 in a browser to see the site!  Also, the database is excluded from the VCS so we each have our own
-independent databases.
+Install
+-------
+
+* Be sure all of the above software is installed, and then inside of a command prompt or terminal, navigate to project root folder
+
+* Use bundle install to install the appropriate dependencies:
+    ```
+    bundle install
+    ```
+
+* If a database does not already exist, create and seed a new database with:
+    ```
+    rake db:migrate db:seed
+    ```
+
+* If a database does already exist use the following to overwrite:
+    ```
+    rake db:reset db:migrate db:seed
+    ```
+
+* Start the server
+    ```
+    rails s
+    ```
+
+* Go to "http://localhost:3000" in your web browser
+
+* Done!
