@@ -27,10 +27,16 @@ class EventsController < ApplicationController
   end
 
   def edit
+    if !current_user.admin?
+      redirect_to events_path
+    end
     @event = Event.find(params[:id])
   end
 
   def update
+    if !current_user.admin?
+      redirect_to events_path
+    end
     @event = Event.find(params[:id])
     if @event.update_attributes(event_params)
       redirect_to events_path, :notice => "Event Updated"
@@ -40,6 +46,9 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    if !current_user.admin?
+      redirect_to events_path
+    end
     Event.find(params[:id]).destroy
     redirect_to events_path, :notice => "Event Deleted"
   end

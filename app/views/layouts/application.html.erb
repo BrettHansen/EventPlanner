@@ -28,7 +28,7 @@
             <%= link_to 'Featured Events', events_path %>
           </li>
           <li class="right">
-            <%= link_to "Logout", destroy_user_session_path, method: 'delete' %>
+            <%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %>
           </li>
           <li class="right">
             <%= link_to 'Settings', edit_user_registration_path %>
@@ -38,7 +38,7 @@
             <%= link_to 'Register', new_user_registration_path %>
           </li>
           <li class="right">
-            <%= link_to 'Login', new_user_session_path %>
+            <%= link_to 'Sign in', new_user_session_path %>
           </li>
       <% end %>
     </ul>

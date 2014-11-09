@@ -1,5 +1,7 @@
 # Default Users
-User.create(email: "admin@admin.com", password: "password", password_confirmation: "password")
+@user = User.create(email: "admin@admin.com", password: "password", password_confirmation: "password")
+@user.update_attribute :admin, true
+@user.save
 
 # Default Events
 Event.create(title: "Past Event",

@@ -2,5 +2,10 @@
   <p class="title"><%= link_to preview_events.title, preview_events %></p>
   <p class="date"><%= preview_events.date.strftime('%A, %B %d at %l:%M %P') %></p>
   <div class="text"><%= simple_format(preview_events.content) %></div>
+  <% if current_user.admin? %>
+    <p>
+      <%= link_to 'Edit', edit_event_path(preview_events.id) %>
+    </p>
+  <% end %>
   <hr/>
 </div>

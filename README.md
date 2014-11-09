@@ -1,6 +1,6 @@
 ## Event Planner
 
-In order to get this to work on your system, you will have to install [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows) and [NodeJS](http://nodejs.org/)
+In order to get this to work on your system, you will have to install [Ruby Racer](https://github.com/hiranpeiris/therubyracer_for_windows), [NodeJS](http://nodejs.org/), and ImageMagick.
 
 Once these are installed, use bundle install to install the appropriate dependencies.
 

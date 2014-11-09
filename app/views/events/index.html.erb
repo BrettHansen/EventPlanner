@@ -3,4 +3,6 @@
 <h1>Featured Events</h1>
 <%= render partial: 'common/preview_events', collection: @events %>
 
-<p><%= link_to "Add a new event", new_event_path %></p>
+<% if current_user.admin? %>
+    <p><%= link_to "Add a new event", new_event_path %></p>
+<% end %>
