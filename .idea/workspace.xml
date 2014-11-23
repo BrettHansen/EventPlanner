@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7610442" vertical-offset="709" max-vertical-offset="1207">
-              <caret line="64" column="59" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -545,7 +545,11 @@
       <created>1416742603998</created>
       <updated>1416742603998</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="I am bad at markdown">
+      <created>1416742683285</created>
+      <updated>1416742683285</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -591,7 +595,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Many CSS and html changes" />
     <MESSAGE value="more CSS changes" />
     <MESSAGE value="Added ticketing model and controller." />
     <MESSAGE value="If a user already has tickets to an event, it will not show up in featured events" />
@@ -616,7 +619,8 @@
     <MESSAGE value="Database migrated to postgresql.  You must install pg first." />
     <MESSAGE value="README updates for PostgreSQL" />
     <MESSAGE value="README updates for reaching the site on heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="README updates for reaching the site on heroku" />
+    <MESSAGE value="I am bad at markdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="I am bad at markdown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -975,7 +979,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7610442" vertical-offset="709" max-vertical-offset="1207">
-          <caret line="64" column="59" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
           <folding />
         </state>
       </provider>
