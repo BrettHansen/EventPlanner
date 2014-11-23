@@ -117,7 +117,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.9, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.5, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.2, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.7, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.10.0, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.0.1, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.3.0, ruby-1.9.3-p545) [gem]" level="application" />
@@ -142,6 +142,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.0.2, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_12factor (v0.0.3, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.2, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.3, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.0.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.1.2, ruby-1.9.3-p545) [gem]" level="application" />
