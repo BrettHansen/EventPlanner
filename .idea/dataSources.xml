@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2844846875">
+  <component name="DataSourceManagerImpl" format="xml" hash="960255353">
     <data-source source="LOCAL" name="Rails EventPlanner: development" uuid="d76eaf85-3278-4398-8b38-1cf50b938e5c">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\Projects\Programming\CSE360\EventPlanner\db\development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myapp_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc2dfcbdfd3dfcedfcfdfc4</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails EventPlanner: test" uuid="155038ad-f061-4063-9fcb-25fb9fb101d4">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\Projects\Programming\CSE360\EventPlanner\db\test.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myapp_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc2dfcbdfd3dfcedfcfdfc4</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails EventPlanner: production" uuid="11af1bee-f129-4cb4-b9a4-aad961bad510">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/production.pg</jdbc-url>
       <libraries />
     </data-source>
   </component>

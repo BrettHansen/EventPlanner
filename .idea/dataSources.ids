@@ -3,4 +3,10 @@
   <data-source source="LOCAL" name="Rails EventPlanner: development" uuid="d76eaf85-3278-4398-8b38-1cf50b938e5c">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails EventPlanner: test" uuid="155038ad-f061-4063-9fcb-25fb9fb101d4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails EventPlanner: production" uuid="11af1bee-f129-4cb4-b9a4-aad961bad510">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
