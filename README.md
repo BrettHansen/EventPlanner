@@ -23,6 +23,8 @@ Requirements
 
 * [ImageMagick](http://www.imagemagick.org/)
 
+* [PostgreSQL] (http://www.postgresql.org/)
+
 Install
 -------
 
@@ -33,7 +35,12 @@ Install
     bundle install
     ```
 
-* If a database does not already exist, create and seed a new database with:
+* Once and only once use the following command to create the database:
+    ```
+    rake db:create
+    ```
+
+* To migrate and seed the newly created database, use the following command:
     ```
     rake db:migrate db:seed
     ```
