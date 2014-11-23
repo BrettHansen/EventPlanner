@@ -62,4 +62,4 @@ Install
 View the Site on Heroku
 -------
 
-    *[Event Planner](http://www.eventplannercse360.heroku.com)*
+* [Event Planner](http://www.eventplannercse360.heroku.com)
