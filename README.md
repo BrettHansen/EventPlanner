@@ -58,3 +58,8 @@ Install
 * Go to "http://localhost:3000" in your web browser
 
 * Done!
+
+View the Site on Heroku
+-------
+
+    *[Event Planner](http://www.eventplannercse360.heroku.com)*
