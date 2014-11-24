@@ -126,7 +126,7 @@ body {
     clear: both;
     color: $content_text;
     overflow: hidden;
-    margin-top: 0px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -154,28 +154,21 @@ body {
       height: 200px;
     }
 
-    .sign_in {
-      display: list-item;
-      width: 50%;
+    .sign_in, .register, .settings {
       padding-bottom: 20px;
 
       input {
-        margin: 2px;
+        margin: 5px;
+        width: 300px;
       }
 
       input[type="checkbox"] {
-        margin-left: 40px;
-        width: 10%;
+        margin-left: 5px;
+        width: 10px;
       }
-    }
 
-    .register {
-      display: list-item;
-      width: 50%;
-      padding-bottom: 20px;
-
-      input {
-        margin: 2px;
+      label {
+        margin-left: 0px;
       }
     }
 
@@ -232,9 +225,9 @@ body {
         color: $black;
       }
 
-      .book_form {
-        width: 10%;
-
+      input {
+        margin: 5px;
+        width: 50px;
       }
     }
 
@@ -254,30 +247,6 @@ body {
         width: 100%;
       }
     }
-
-    .register_form {
-      display: inline-block;
-      width: 450px;
-      vertical-align: top;
-
-      p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    }
-    .login_form {
-      display: inline-block;
-      width: 450px;
-      vertical-align: top;
-      margin-left: 245px;
-
-      p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    }
-
-
   }
 
   /* Flash Message */

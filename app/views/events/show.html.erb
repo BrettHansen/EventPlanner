@@ -22,7 +22,7 @@
         <%= form_for([current_user, current_user.tickets.build]) do |form| %>
             <%= form.hidden_field :event_id, :value => @event.id %>
             <span>
-              <%= form.label :quantity %>
+              <%= form.label :quantity %><br>
             </span>
             <span>
               <%= form.text_field :quantity, :value => '1' %>

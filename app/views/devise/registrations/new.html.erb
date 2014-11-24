@@ -11,13 +11,6 @@
       </div>
 
       <div class="field">
-        <%= f.label :avatar do %>
-            <%= f.file_field :avatar %>
-            <%= f.hidden_field :avatar_cache %>
-        <% end %>
-      </div>
-
-      <div class="field">
         <%= f.label :password %>
         <% if @validatable %>
             <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -31,6 +24,17 @@
         <br/>
         <%= f.password_field :password_confirmation, autocomplete: 'off' %>
       </div>
+      <br>
+
+      <div class="field">
+        <%= f.label :avatar, "Avatar" %>
+        <br>
+        <%= f.label :avatar do %>
+            <%= f.file_field :avatar %>
+            <%= f.hidden_field :avatar_cache %>
+        <% end %>
+      </div>
+      <br>
 
       <div class="actions">
         <%= f.submit 'Register' %>
