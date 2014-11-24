@@ -2,17 +2,18 @@
 
   <div style="float:left; padding-right:15px;">
     <%= link_to image_tag('defaultEvent.png'), preview_events %>
+    <% if current_user.admin? %>
+        <p>
+          <%= button_to 'Edit', edit_event_path(preview_events.id), :method => :get %>
+        </p>
+    <% end %>
   </div>
 
   <div style="float:left;">
       <p class="title"><%= link_to preview_events.title, preview_events %></p>
       <p class="date"><%= preview_events.date.strftime('%A, %B %d at %l:%M %P') %></p>
       <div class="text"><%= simple_format(preview_events.content) %></div>
-      <% if current_user.admin? %>
-        <p>
-          <%= link_to 'Edit', edit_event_path(preview_events.id) %>
-        </p>
-      <% end %>
+
   </div>
 
   <div style="clear:both;"></div>

@@ -20,7 +20,7 @@ class EventsController < ApplicationController
     @event.tickets_avail = @event.tickets_total
 
     if @event.save
-      redirect_to events_path, :notice => "New Event Added"
+      redirect_to root_path, :notice => "New Event Added"
     else
       render "new"
     end
@@ -28,18 +28,18 @@ class EventsController < ApplicationController
 
   def edit
     if !current_user.admin?
-      redirect_to events_path
+      redirect_to root_path
     end
     @event = Event.find(params[:id])
   end
 
   def update
     if !current_user.admin?
-      redirect_to events_path
+      redirect_to root_path
     end
     @event = Event.find(params[:id])
     if @event.update_attributes(event_params)
-      redirect_to events_path, :notice => "Event Updated"
+      redirect_to root_path, :notice => "Event Updated"
     else
       render "edit"
     end
@@ -47,10 +47,10 @@ class EventsController < ApplicationController
 
   def destroy
     if !current_user.admin?
-      redirect_to events_path
+      redirect_to root_path
     end
     Event.find(params[:id]).destroy
-    redirect_to events_path, :notice => "Event Deleted"
+    redirect_to root_path, :notice => "Event Deleted"
   end
 
   def event_params

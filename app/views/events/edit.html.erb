@@ -39,3 +39,8 @@
       <%= form.submit "Update Event" %>
     </p>
 <% end %>
+<% if current_user.admin? %>
+    <p>
+      <%= button_to 'Delete', destroy_event_path(@event.id), :method => :delete %>
+    </p>
+<% end %>
