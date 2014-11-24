@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background: #AAAAB3;
+  background: #5E75B5;
   width: auto;
 }
 #cssmenu ul {
@@ -34,11 +34,11 @@
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  /*text-transform: uppercase;*/
-  font-size: 14px;
+  text-transform: uppercase;
+  font-size: 16px;
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;

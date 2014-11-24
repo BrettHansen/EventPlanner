@@ -51,6 +51,8 @@ table {
 
 /* -------- Sass Variables -------- */
 
+$almostblack: #222;
+$pastelblue: #5E75B5;
 $darkblue: #3B3F52;
 $deepblue: #585C70;
 $lightblue: #949BB5;
@@ -104,19 +106,24 @@ body {
   /* Header */
 
   #header {
-    background-color: $deepblue;
+    background-color: $pastelblue;
     color: $white;
-    padding: 10px 10px 20px 10px;
+    padding-top: 10px;
 
     a {
-      color: $white;
+      padding: 20px 10px 10px 15px;
+      color: $almostblack;
       text-decoration: none;
-      font-size: 220%;
+      font-size: 180%;
     }
 
     span, img {
       float: right;
-      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+    img {
+      border: 2px solid #EEE;
     }
   }
 
@@ -174,13 +181,19 @@ body {
 
     .event_preview {
       padding-left: 0px;
+
       a {
         color: $content_text;
         text-decoration: none;
+        -webkit-transition: color .5s;
+        -moz-transition: color .5s;
+        -ms-transition: color .5s;
+        -o-transition: color .5s;
+        transition: color .5s;
       }
 
       a:hover {
-        text-decoration: underline;
+        color: #1111AA;
       }
 
       .title {
