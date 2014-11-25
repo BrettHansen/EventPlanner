@@ -9,3 +9,7 @@ end
 When /^I click "([^"]*)"$/ do |element|
   click_on element
 end
+
+Then /^I expect to see "([^"]*)"$/ do |text|
+  expect(page).to have_content(text)
+end

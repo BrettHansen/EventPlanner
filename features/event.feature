@@ -1,8 +1,9 @@
 Feature: A User can interact with events.
 
-  Scenario: User clicks event thumbnail for event details page
-    Given I am an existing user
-    And I am signed in
-    And I load the home page
-    And I click an event thumbnail
-    Then The event detail page is loaded
+  Scenario: The homepage for a signed-in user is the events page
+    Given I am on "/users/sign_in"
+    When I fill in "user_email" with "example@example.com"
+    And I fill in "user_password" with "password"
+    And I click "commit"
+    Given I load the home page
+    Then I expect to see "Symphony No. 9"

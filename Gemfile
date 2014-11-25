@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rspec-rails', '~> 3.0.0'
-gem 'cucumber-rails'
 gem 'selenium-webdriver'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -46,6 +45,10 @@ gem 'selenium-webdriver'
 group :production, :staging do
   gem 'pg'
   gem 'rails_12factor'
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
 end
 
 # Use ActiveModel has_secure_password
