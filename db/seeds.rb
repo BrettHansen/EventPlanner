@@ -7,13 +7,6 @@
 @user.save
 
 # Default Events
-Event.create(title: "Past Event",
-             event_type: "Event",
-             venue: "Venue",
-             tickets_avail: 1000,
-             tickets_total: 1000,
-             content: "This event should not show up in featured events.",
-             date: "1994-03-01 07:58:00")
 Event.create(title: "Beethoven and Brahms",
              event_type: "Concert",
              venue: "Symphony Hall",
@@ -77,3 +70,10 @@ Event.create(title: "Mahler's Symphony No. 1",
              tickets_total: 1000,
              content: "Classics Series:\r\n\r\nTito Munoz, conductor\r\nGiora Schmidt, violin",
              date: "2015-05-23 19:30:00")
+Event.create(title: "Example Event",
+             event_type: "Event Type",
+             venue: "Event Venue",
+             tickets_avail: 31,
+             tickets_total: 1127,
+             content: "Total Eclipse in Carbondale, IL",
+             date: "2017-08-23 18:26:40")

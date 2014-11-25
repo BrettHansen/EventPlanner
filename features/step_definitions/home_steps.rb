@@ -3,8 +3,8 @@ Given(/^I load the home page$/) do
 end
 
 When(/^I fill in a unique email$/) do
-  @size = rand(100..1000)
-  fill_in "user_email", with: "example#{@size}@example.com"
+  @num = rand(100..10000)
+  fill_in "user_email", with: "example#{@num}@example.com"
 end
 
 Given /^I sign in as user$/ do
