@@ -14,6 +14,14 @@ Given /^I sign in as user$/ do
   click_on "commit"
 end
 
+Given /^I sign in as a generic user$/ do
+  visit "http://localhost:3000/users/sign_up"
+  fill_in "user_email", with: "example@#{rand(100..10000)}example.com"
+  fill_in "user_password", with: "password"
+  fill_in "user_password_confirmation", with: "password"
+  click_on "commit"
+end
+
 Given /^I sign in as admin$/ do
   visit "http://localhost:3000"
   fill_in "user_email", with: "admin@admin.com"

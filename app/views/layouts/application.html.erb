@@ -32,7 +32,7 @@
             <%= link_to 'Settings', edit_user_registration_path %>
           </li>
           <li>
-            <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete' %>
+            <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', :id => 'sign_out' %>
           </li>
       <% else %>
           <li class="<%= is_active?(new_user_registration_path) %>">

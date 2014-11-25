@@ -21,4 +21,13 @@ Feature: Event functionality
     And I expect to see "Wednesday, August 23, 2017 at 6:26 pm"
     And I expect to see "Event Type at Event Venue"
     And I expect to see "Total Eclipse in Carbondale, IL"
-    And I expect to see "31 out of 1127 tickets available"
+    And I expect to see "out of 1127 tickets available"
+
+  Scenario: Users can book events
+    Given I sign in as a generic user
+    When I visit "/"
+    And I click "Example Event"
+    And I fill in "ticket_quantity" with "1"
+    And I click "commit"
+    And I am on "/my_events"
+    And I expect to see "You have 1 ticket for this event"
