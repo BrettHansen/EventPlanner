@@ -1,5 +1,5 @@
 When /^I visit "([^"]*)"$/ do |path|
-  visit path
+  visit "http://localhost:3000#{path}"
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
