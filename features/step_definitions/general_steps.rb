@@ -6,6 +6,10 @@ When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
   fill_in element, with: text
 end
 
+When /^I choose "([^"]*)" from "([^"]*)"$/ do |option, element|
+  select option, :from => element
+end
+
 When /^I click "([^"]*)"$/ do |element|
   click_on element
 end
@@ -16,6 +20,10 @@ end
 
 Then /^I expect to see "([^"]*)"$/ do |text|
   expect(page).to have_content(text)
+end
+
+Then /^I expect not to see "([^"]*)"$/ do |text|
+  expect(page).to have_no_content(text)
 end
 
 Then /^I am on "([^"]*)"$/ do |path|
