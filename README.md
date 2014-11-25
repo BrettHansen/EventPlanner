@@ -47,7 +47,7 @@ Install
 
 * If a database does already exist use the following to overwrite:
     ```
-    rake db:reset db:migrate db:seed
+    rake db:reset
     ```
 
 * Start the server
@@ -58,6 +58,23 @@ Install
 * Go to "http://localhost:3000" in your web browser
 
 * Done!
+
+Testing
+-------
+
+* Start the server (as described above)
+* In a command prompt window, navigate to the project directory, and execute the appropriate command:
+
+    Unit Testing
+        ```
+        rake test
+        ```
+
+    Functional Testing
+        ```
+        cucumber
+        ```
+
 
 View the Site on Heroku
 -------

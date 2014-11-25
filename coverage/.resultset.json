@@ -639,7 +639,7 @@
   },
   "RSpec": {
     "coverage": {
-      "F:/Ryan/Development/Ruby/EventPlanner/app/models/event.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/app/models/event.rb": [
         1,
         null,
         1,
@@ -647,48 +647,52 @@
         1,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/models/ticket.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/app/models/ticket.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/helpers/events_helper.rb": [
-        1,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/helpers/tickets_helper.rb": [
-        1,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/helpers/sessions_helper_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/app/helpers/application_helper.rb": [
         1,
         null,
         1,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/helpers/tickets_helper_test.rb": [
-        1,
+        0,
         null,
+        null
+      ],
+      "E:/Projects/Programming/CSE360/EventPlanner/app/helpers/events_helper.rb": [
         1,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/helpers/users_helper_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/app/helpers/tickets_helper.rb": [
+        1,
+        null
+      ],
+      "E:/Projects/Programming/CSE360/EventPlanner/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "E:/Projects/Programming/CSE360/EventPlanner/test/helpers/sessions_helper_test.rb": [
         1,
         null,
         1,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/models/event_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/helpers/tickets_helper_test.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "E:/Projects/Programming/CSE360/EventPlanner/test/helpers/users_helper_test.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "E:/Projects/Programming/CSE360/EventPlanner/test/models/event_test.rb": [
         1,
         null,
         1,
@@ -737,7 +741,7 @@
         null,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/models/ticket_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/models/ticket_test.rb": [
         1,
         null,
         1,
@@ -784,7 +788,7 @@
         null,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/models/user_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/models/user_test.rb": [
         1,
         null,
         1,
@@ -826,27 +830,13 @@
         null,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/controllers/events_controller_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/controllers/events_controller_test.rb": [
         1,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/controllers/sessions_controller_test.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/controllers/tickets_controller_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/controllers/tickets_controller_test.rb": [
         1,
         null,
         1,
@@ -855,105 +845,14 @@
         null,
         null
       ],
-      "F:/Ryan/Development/Ruby/EventPlanner/test/controllers/users_controller_test.rb": [
+      "E:/Projects/Programming/CSE360/EventPlanner/test/controllers/users_controller_test.rb": [
         1,
         null,
         1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/controllers/users_controller.rb": [
-        1,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "F:/Ryan/Development/Ruby/EventPlanner/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        null,
         null,
         null
       ]
     },
-    "timestamp": 1416890099
+    "timestamp": 1416914966
   }
 }

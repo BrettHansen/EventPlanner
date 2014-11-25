@@ -23,11 +23,14 @@ Feature: Event functionality
     And I expect to see "Total Eclipse in Carbondale, IL"
     And I expect to see "out of 1127 tickets available"
 
-  Scenario: Users can book events
+  Scenario: Users can book events and view events
     Given I sign in as a generic user
     When I visit "/"
     And I click "Example Event"
     And I fill in "ticket_quantity" with "1"
     And I click "commit"
     And I am on "/my_events"
+    And I expect to see "You have 1 ticket for this event"
+    When I visit "/"
+    When I click "my_events"
     And I expect to see "You have 1 ticket for this event"

@@ -12,7 +12,7 @@ Feature: A new user comes to home page and fills the email and password to login
     Then I am on "/"
 
   Scenario: user registers
-    Given I visit "/users/sign_in"
+    Given I visit "/users/sign_up"
     When I fill in a unique email
     And I fill in "user_password" with "password"
     And I fill in "user_password_confirmation" with "password"
@@ -22,5 +22,4 @@ Feature: A new user comes to home page and fills the email and password to login
   Scenario: user logs out
     Given I sign in as user
     When I logout
-    And I wait 3 seconds
     Then I expect to see "You need to sign in or sign up before continuing"
