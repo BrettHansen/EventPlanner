@@ -3,6 +3,9 @@
 @user.update_attribute :admin, true
 @user.save
 
+@user = User.create(email: "example@example.com", password: "password", password_confirmation: "password")
+@user.save
+
 # Default Events
 Event.create(title: "Past Event",
              event_type: "Event",

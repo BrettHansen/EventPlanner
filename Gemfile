@@ -40,8 +40,8 @@ gem 'bcrypt-ruby'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
-
 gem 'simplecov'
+gem 'selenium-webdriver'
 
 group :production, :staging do
   gem 'pg'
