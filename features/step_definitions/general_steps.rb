@@ -1,4 +1,4 @@
-Given /^I am on "([^"]*)"$/ do |path|
+When /^I visit "([^"]*)"$/ do |path|
   visit path
 end
 
@@ -16,4 +16,8 @@ end
 
 Then /^I expect to see "([^"]*)"$/ do |text|
   expect(page).to have_content(text)
+end
+
+Then /^I am on "([^"]*)"$/ do |path|
+  expect(current_path).to eq path
 end
