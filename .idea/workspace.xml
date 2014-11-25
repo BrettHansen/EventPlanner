@@ -29,8 +29,8 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2972441" vertical-offset="988" max-vertical-offset="1496">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.86614174" vertical-offset="835" max-vertical-offset="1496">
+              <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -729,7 +729,11 @@
       <created>1416915154383</created>
       <updated>1416915154383</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="README updates">
+      <created>1416915269531</created>
+      <updated>1416915269531</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,7 +779,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Unit tests implemented." />
     <MESSAGE value="Necessary for admin privileges." />
     <MESSAGE value="Coverage test results." />
     <MESSAGE value="Email now shown next to avatar when signed in." />
@@ -800,7 +803,8 @@
     <MESSAGE value="event test updates part 2" />
     <MESSAGE value="event test updates part 3" />
     <MESSAGE value="README updates and default avatar implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="README updates and default avatar implemented" />
+    <MESSAGE value="README updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="README updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1177,8 +1181,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2972441" vertical-offset="988" max-vertical-offset="1496">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.86614174" vertical-offset="835" max-vertical-offset="1496">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
           <folding />
         </state>
       </provider>

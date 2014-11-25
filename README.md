@@ -65,15 +65,15 @@ Testing
 * Start the server (as described above)
 * In a command prompt window, navigate to the project directory, and execute the appropriate command:
 
-    Unit Testing
-        ```
-        rake test
-        ```
+    * Unit Testing
+    ```
+    rake test
+    ```
 
-    Functional Testing
-        ```
-        cucumber
-        ```
+    * Functional Testing
+    ```
+    cucumber
+    ```
 
 
 View the Site on Heroku
