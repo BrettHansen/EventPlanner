@@ -18,3 +18,9 @@ Feature: A new user comes to home page and fills the email and password to login
     And I fill in "user_password_confirmation" with "password"
     And I click "commit"
     Then I am on "/"
+
+  Scenario: user logs out
+    Given I sign in as user
+    When I logout
+    And I wait 3 seconds
+    Then I expect to see "You need to sign in or sign up before continuing"

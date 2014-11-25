@@ -28,3 +28,7 @@ Given /^I sign in as admin$/ do
   fill_in "user_password", with: "password"
   click_on "commit"
 end
+
+Given /^I logout$/ do
+  click_on "sign_out"
+end
