@@ -13,7 +13,7 @@ Feature: A new user comes to home page and fills the email and password to login
 
   Scenario: user registers
     Given I load the register page
-    When I fill in "user_email" with "example27@example.com"
+    When I fill in a unique email
     And I fill in "user_password" with "password"
     And I fill in "user_password_confirmation" with "password"
     And I click "commit"
