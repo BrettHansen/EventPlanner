@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rspec-rails', '~> 3.0.0'
 gem 'cucumber-rails'
-
+gem 'selenium-webdriver'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

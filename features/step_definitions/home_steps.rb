@@ -1,5 +1,5 @@
 Given(/^I am a new user$/) do
-  logout user
+  #logout user
 end
 
 Given(/^I load the home page$/) do
