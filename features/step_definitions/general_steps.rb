@@ -10,6 +10,10 @@ When /^I click "([^"]*)"$/ do |element|
   click_on element
 end
 
+When /^I wait (\d+) seconds?$/ do |seconds|
+  sleep seconds.to_i
+end
+
 Then /^I expect to see "([^"]*)"$/ do |text|
   expect(page).to have_content(text)
 end
