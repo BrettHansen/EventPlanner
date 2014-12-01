@@ -7,18 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="cssmenu">
-    <ul>
-
+<div id="cssmenu">
+  <ul>
+    <div id="logo">
       <li class="logo">
         <%= image_tag('logo.png') %>
       </li>
+    </div>
+    <div id="left">
       <% if user_signed_in? %>
-          <li class="<%= is_active?(root_path) %>">
-            <%= link_to 'Featured Events', root_path %>
-          </li>
           <li class="<%= is_active?(my_events_path) %>">
             <%= link_to 'My Events', my_events_path, :id => 'my_events' %>
+          </li>
+          <li class="<%= is_active?(root_path) %>">
+            <%= link_to 'Featured Events', root_path %>
           </li>
           <li class="<%= is_active?(edit_user_registration_path) %>">
             <%= link_to 'Settings', edit_user_registration_path, :id => 'settings' %>
@@ -26,16 +28,6 @@
           <li>
             <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', :id => 'sign_out' %>
           </li>
-          <!--<li class="email">-->
-            <!--<%= current_user.email %>-->
-          <!--</li>-->
-          <!--<li class="avater">-->
-            <!--<% if current_user.avatar.url.blank? %>-->
-                <!--<%= image_tag('defaultAvatar.jpg')%>-->
-            <!--<% else %>-->
-                <!--<%= image_tag(current_user.avatar.url) %>-->
-            <!--<% end %>-->
-          <!--</li>-->
       <% else %>
           <li class="<%= is_active?(new_user_registration_path) %>">
             <%= link_to 'Register', new_user_registration_path %>
@@ -44,28 +36,43 @@
             <%= link_to 'Sign in', new_user_session_path %>
           </li>
       <% end %>
-    </ul>
-  </div>
-  <!-- end nav -->
+    </div>
+    <div id="right">
+      <% if user_signed_in? %>
+          <li class="email">
+            <%= current_user.email %>
+          </li>
+          <li class="avater">
+            <% if current_user.avatar.url.blank? %>
+                <%= image_tag('defaultAvatar.jpg') %>
+            <% else %>
+                <%= image_tag(current_user.avatar.url) %>
+            <% end %>
+          </li>
+      <% end %>
+    </div>
+  </ul>
+</div>
+<!-- end nav -->
 
-  <div id="content">
+<div id="content">
 
-    <% if notice %>
-        <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-        <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+  <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
 
-    <%= yield %>
+  <%= yield %>
 
-  </div>
-  <!-- end content -->
+</div>
+<!-- end content -->
 
-  <div id="footer">
-    &copy; EventPlanner <%= Date.today.year %>
-  </div>
-  <!-- end footer -->
+<div id="footer">
+  &copy; EventPlanner <%= Date.today.year %>
+</div>
+<!-- end footer -->
 </div>
 <!-- end container -->
 
