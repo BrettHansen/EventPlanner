@@ -17,7 +17,8 @@ time, mark, audio, video {
   font-size: 100%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
-  vertical-align: baseline;
+  vertical-align: middle;
+  text-align: left;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -75,7 +76,6 @@ body {
   background-image: url(bg.jpg);
   background-attachment: fixed;
   text-align: center;
-  min-height: 1080px;
   margin: 0px;
 
   h1, h2, h3 {
