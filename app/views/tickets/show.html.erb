@@ -2,14 +2,14 @@
 <% if !@tickets.empty? %>
     <% @events.each do |event| %>
         <div class="event_preview">
-          <p class="title"><%= link_to event.title, event %></p>
-          <p class="date"><%= event.date.strftime('%A, %B %-d at %l:%M %P') %></p>
-          <div class="text"><%= simple_format(event.content) %></div>
-          <% @ticket = Ticket.find_by_event_id(event.id) %>
-          <% @keyword = @ticket.quantity.to_i == 1 ? 'ticket' : 'tickets' %>
-          <div class="user_tickets">You have <%= @ticket.quantity %> <%= @keyword %> for this event.</div>
-          <hr/>
-        </div>
+              <p class="title"><%= link_to event.title, event %></p>
+              <p class="date"><%= event.date.strftime('%A, %B %-d at %l:%M %P') %></p>
+              <div class="text"><%= simple_format(event.content) %></div>
+              <% @ticket = Ticket.find_by_event_id(event.id) %>
+              <% @keyword = @ticket.quantity.to_i == 1 ? 'ticket' : 'tickets' %>
+              <div class="user_tickets">You have <%= @ticket.quantity %> <%= @keyword %> for this event.</div>
+              <hr/>
+          </div>
     <% end %>
 <% else %>
     <p>

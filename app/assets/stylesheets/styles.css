@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background: #5E75B5;
+  background: #3e5068;
   width: auto;
 }
 #cssmenu ul {
@@ -38,7 +38,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
@@ -47,7 +47,8 @@
   transition: color .25s;
 }
 #cssmenu ul li a:hover {
-  color: #333333;
+  color: #222222;
+  text-shadow: 0 0 35px #cccccc
 }
 #cssmenu ul li a:hover:before {
   width: 100%;
@@ -71,7 +72,8 @@
   bottom: 0;
   height: 3px;
   width: 0;
-  background: #333333;
+  background: #222222;
+    text-shadow: 0 0 35px #cccccc
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
@@ -83,7 +85,8 @@
   display: none;
 }
 #cssmenu ul li.active a {
-  color: #333333;
+  color: #222222;
+    text-shadow: 0 0 35px #cccccc
 }
 #cssmenu ul li.active a:before {
   width: 100%;
