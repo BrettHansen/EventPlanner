@@ -39,10 +39,10 @@
     </div>
     <div id="right">
       <% if user_signed_in? %>
-          <li class="email">
+          <li>
             <%= current_user.email %>
           </li>
-          <li class="avater">
+          <li>
             <% if current_user.avatar.url.blank? %>
                 <%= image_tag('defaultAvatar.jpg') %>
             <% else %>

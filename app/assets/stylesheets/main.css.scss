@@ -30,6 +30,10 @@ body {
   line-height: 1;
 }
 
+img {
+  vertical-align: middle;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -128,6 +132,16 @@ body {
 
     img {
       border: none;
+    }
+  }
+
+  #avatar {
+    width: 50%;
+    float: right;
+
+    span, img {
+      float: right;
+      margin: 20px;
     }
   }
 
