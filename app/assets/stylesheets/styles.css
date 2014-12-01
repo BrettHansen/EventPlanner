@@ -109,7 +109,8 @@
     height: 3px;
     width: 0;
     background: #222222;
-    text-shadow: 0 0 35px #cccccc -webkit-transition : width .25 s;
+    text-shadow: 0 0 35px #cccccc;
+    -webkit-transition : width .25 s;
     -moz-transition: width .25s;
     -ms-transition: width .25s;
     -o-transition: width .25s;
