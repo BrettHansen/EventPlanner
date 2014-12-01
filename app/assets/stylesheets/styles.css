@@ -2,6 +2,7 @@
 #cssmenu {
   background: #3e5068;
   width: auto;
+  text-align: left;
 }
 #cssmenu ul {
   list-style: none;
@@ -30,11 +31,18 @@
 #cssmenu.align-center ul {
   text-align: center;
 }
+
+#cssmenu .logo {
+    position: relative;
+    top: 10px;
+    padding: 0px 15px;
+}
+
 #cssmenu ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 15px 50px;
+  padding: 20px 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -46,6 +54,7 @@
   -o-transition: color .25s;
   transition: color .25s;
 }
+
 #cssmenu ul li a:hover {
   color: #222222;
   text-shadow: 0 0 35px #cccccc

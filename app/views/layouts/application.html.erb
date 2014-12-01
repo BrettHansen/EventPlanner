@@ -7,28 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div id="container">
-  <div id="header">
-    <div id="logo">
-        <%= link_to image_tag('logo.png'), root_path %>
-    </div>
-    <div id="avatar">
-      <% if user_signed_in? && !current_user.avatar.nil? %>
-          <% if current_user.avatar.url.blank? %>
-              <%= link_to image_tag('defaultAvatar.jpg'), edit_user_registration_path %>
-          <% else %>
-              <%= link_to image_tag(current_user.avatar.url), edit_user_registration_path %>
-          <% end %>
-          <span><%= current_user.email %></span>
-      <% end %>
-    </div>
-  </div>
-  <!-- end header -->
-
   <div id="cssmenu">
     <ul>
 
+      <li class="logo">
+        <%= image_tag('logo.png') %>
+      </li>
       <% if user_signed_in? %>
           <li class="<%= is_active?(root_path) %>">
             <%= link_to 'Featured Events', root_path %>
@@ -42,6 +26,16 @@
           <li>
             <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', :id => 'sign_out' %>
           </li>
+          <!--<li class="email">-->
+            <!--<%= current_user.email %>-->
+          <!--</li>-->
+          <!--<li class="avater">-->
+            <!--<% if current_user.avatar.url.blank? %>-->
+                <!--<%= image_tag('defaultAvatar.jpg')%>-->
+            <!--<% else %>-->
+                <!--<%= image_tag(current_user.avatar.url) %>-->
+            <!--<% end %>-->
+          <!--</li>-->
       <% else %>
           <li class="<%= is_active?(new_user_registration_path) %>">
             <%= link_to 'Register', new_user_registration_path %>
