@@ -79,4 +79,4 @@ Testing
 View the Site on Heroku
 -------
 
-* [Event Planner](http://eventplannercse360.heroku.com)
+* [Event Planner](http://event-pro.heroku.com)
