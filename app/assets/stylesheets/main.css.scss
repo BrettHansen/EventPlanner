@@ -73,8 +73,9 @@ $black: #000;
 /* General Tags */
 
 body {
-  background-image: url(bg.jpg);
-  background-attachment: fixed;
+//  background-image: url(bg.jpg);
+//  background-attachment: fixed;
+  background-color: #CBCCD1;
   text-align: center;
   margin: 0px;
 
@@ -109,32 +110,6 @@ body {
     text-align: left;
   }
 
-  /* Header */
-
-  #header {
-    background-image: -webkit-linear-gradient(top, #565656 0%, #999999 100%);
-    color: $white;
-    height: 110px;
-    text-align: left;
-    padding: 20px;
-
-    a {
-      padding: 20px 10px 10px 15px;
-      color: $almostblack;
-      text-decoration: none;
-      font-size: 180%;
-      border: none;
-    }
-
-    span, img {
-      float: left;
-    }
-
-    img {
-      border: none;
-    }
-  }
-
   #avatar {
     width: 50%;
     float: right;
@@ -153,7 +128,7 @@ body {
     overflow: hidden;
     padding: 15px;
     width: 80%;
-    background: #dddddd;
+    background: #eee;
     margin: 0px auto;
 
     p {
